@@ -1,0 +1,48 @@
+/*
+ * Task 1: Positioning (Flexbox)
+ * This CSS file defines the layout structure using CSS Flexbox.
+ */
+
+/* ----------------
+ * 1. Flex Containers
+ * ---------------- */
+
+/* Make the entire <body> a Flex container */
+body {
+    /* Step 1a: Enable Flexbox for the body */
+    display: flex;
+    /* Step 1b: Arrange the main children (header, main, footer) vertically in a column */
+    flex-direction: column;
+    /* Ensure the body takes up the full height of the viewport */
+    min-height: 100vh;
+}
+
+/* Make the <main> tag (which contains article and aside) a Flex container */
+main {
+    /* Step 1c: Enable Flexbox for the main area */
+    display: flex;
+    /* Step 1d: Arrange the children (article, aside) horizontally in a row (default direction) */
+    flex-direction: row;
+    /* Step 1e: Tell <main> to automatically take up all available vertical space between header and footer */
+    flex: auto;
+}
+
+
+/* ----------------
+ * 2. Flex Items (Sizing)
+ * ---------------- */
+
+/* Set the sizing and scrolling for the <article> and <aside> elements */
+article {
+    /* Step 2a: Assign <article> 2 parts of the available space (2/3 width) */
+    flex: 2;
+    /* Step 3: Enable vertical scrolling for the content area if it overflows */
+    overflow-y: auto;
+}
+
+aside {
+    /* Step 2b: Assign <aside> 1 part of the available space (1/3 width) */
+    flex: 1;
+    /* Step 3: Enable vertical scrolling for the sidebar area if it overflows */
+    overflow-y: auto;
+}
