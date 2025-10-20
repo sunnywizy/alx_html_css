@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'My Custom Font';
+    src: url('./fonts/SourceSansPro-Black.otf') format('truetype'), /* 2. Path to the font file */
+         url('./fonts/SourceSansPro-BlackIt.otf') format('otf');  /* 3. Fallback path (optional but recommended) */
+    font-weight: normal;  
+    font-style: normal;   
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'My Custom Font', Arial, sans-serif;
+}
+
+/* 1. Make the header fixed at the top */
+#main-header {
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;
+    z-index: 1000;   /* Keeps the header above other content when scrolling */
+}
+
+/* 2. Style the nav bar content and layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%; 
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+
+.navbar .logo {
+    width: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 12px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Hide the toggle button by default (desktop view) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Styling the hero page */
+.hero-page {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-sub-page {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    width: 800px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hero-sub-title {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.hero-content-btn {
+    width: 180px;
+    margin: 30px auto 10px auto;
+    padding: 10px;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #C271FF;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.learner-title{
+    width: 280px;
+    margin: auto;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.purple-learn {
+    color: #C271FF;
+}
+
+.learners {
+    margin: 30px auto;
+    display: flex;
+}
+
+.learner-pro {
+    width: 150px;
+    margin: auto;
+}
+
+.learner-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.learner-name {
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.learner-award {
+    width: 150px;
+    margin: auto;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+}
