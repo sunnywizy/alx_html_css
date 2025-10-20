@@ -334,3 +334,66 @@ body {
     text-align: right;
     color: #C271FF;
 }
+
+/*Styling for membership section */
+.membership-page {
+    width: 100%;
+    margin: auto;
+    background-color: #071629;
+}
+
+.membership-sub-page {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.membership-sub-page h2 {
+    width: 234px;
+    margin:  20px auto;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.membership-box {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dot {
+    width:257px;
+    margin: 20px auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dot h2 {
+    width: 200px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.dot p {
+    width: 200px;
+    margin: 10px auto;
+    font-size: 14px;
+    margin: 20px auto;
+}
+
+.register-btn {
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    background-color: #C271FF;
+    border-radius: 50px;
+    border: none;
+}
