@@ -397,3 +397,44 @@ body {
     border-radius: 50px;
     border: none;
 }
+
+/*Styling for the FAQ section */
+.faq-page {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.faq-page h2 {
+    width: 300px;
+    margin: 20px auto;
+    font-size: 60px;
+    color: #071629;
+}
+
+.faq-sub-page {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 60px;
+}
+
+.faq-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.faq-box h3 {
+    width: 350px;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #071629;
+}
+
+.faq-article {
+    width: 350px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #07162980;
+}
