@@ -438,3 +438,78 @@ body {
     font-size: 14px;
     color: #07162980;
 }
+
+/*Styling for the Footer section */
+footer {
+    width: 100%;
+    background-color: #071629;
+}
+
+.footer-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-box {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+/* --- Responsive Design (Mobile View) --- */
+
+@media (max-width: 768px) {
+    /* Show the toggle button on small screens */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Stack items in the nav bar */
+    .navbar {
+        flex-wrap: wrap; 
+    }
+
+    /* * Hide the menu links by default on mobile.
+    * JavaScript will toggle the 'active' class to show it.
+    */
+    .nav-links {
+        width: 100%; /* Take full width */
+        max-height: 0; /* Key for smooth collapse/expand transition */
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    /* Style for when the menu is active (open) */
+    .nav-links.active {
+        max-height: 300px; /* A value larger than the menu's height */
+    }
+
+    /* Stack the list items vertically on mobile */
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        border-top: 1px solid #555; /* Separator for list items */
+    }
+}
