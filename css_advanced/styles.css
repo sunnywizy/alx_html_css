@@ -221,3 +221,116 @@ body {
 .testimonial-sub-title {
     font-style: italic;
 }
+
+/* Styling of the tutorials Page */
+.tutorials-page {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.tutorials-sub-page {
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tutorials-title {
+    width: 350px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.tutorials-video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorials-articles img {
+    width: 230px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.tutorials-articles {
+    width: 240px;
+    margin: 30px auto;
+}
+
+.tutorials-articles h3 {
+    margin: 10px auto;
+    padding:  5px 10px;
+    font-size: 16px;
+    color: #071629;
+}
+
+.tutorials-articles p {
+    margin: 10px auto;
+    font-size: 14px;
+    padding:  5px 10px;
+    color: #07162980;
+}
+
+.tutorial-author img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.tutorial-author {
+    width: 175px;
+    margin: 10px 0;
+    padding:  5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial-author h4 {
+    font-size: 14px;
+    color: #C271FF;
+    padding:  5px 10px;
+}
+
+.rating {
+    width: 240px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-stars {
+    width: 120px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 14px;
+}
+
+.purple-star {
+    color: #C271FF;
+}
+
+.gray-star {
+    color: #D8D8D8;
+}
+
+.rating p {
+    width: 120px;
+    font-size: 15px;
+    text-align: right;
+    color: #C271FF;
+}
